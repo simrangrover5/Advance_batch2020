@@ -1,0 +1,279 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Simran Grover> cd C:\batches\online_batch\batch_7pm\djangoproject\d_jproject\
+PS C:\batches\online_batch\batch_7pm\djangoproject\d_jproject> python .\manage.py shell
+Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.8.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from django import forms
+
+In [2]: print(dir(forms))
+['ALL_FIELDS', 'BaseForm', 'BaseFormSet', 'BaseInlineFormSet', 'BaseModelForm', 'BaseModelFormSet', 'BooleanField', 'BoundField', 'CharField', 'CheckboxInput', 'CheckboxSelectMultiple', 'ChoiceField', 'ClearableFileInput', 'ComboField', 'DateField', 'DateInput', 'DateTimeField', 'DateTimeInput', 'DecimalField', 'DurationField', 'EmailField', 'EmailInput', 'Field', 'FileField', 'FileInput', 'FilePathField', 'FloatField', 'Form', 'GenericIPAddressField', 'HiddenInput', 'ImageField', 'IntegerField', 'Media', 'MediaDefiningClass', 'ModelChoiceField', 'ModelForm', 'ModelMultipleChoiceField', 'MultiValueField', 'MultiWidget', 'MultipleChoiceField', 'MultipleHiddenInput', 'NullBooleanField', 'NullBooleanSelect', 'NumberInput', 'PasswordInput', 'RadioSelect', 'RegexField', 'Select', 'SelectDateWidget', 'SelectMultiple', 'SlugField', 'SplitDateTimeField', 'SplitDateTimeWidget', 'SplitHiddenDateTimeWidget', 'TextInput', 'Textarea', 'TimeField', 'TimeInput', 'TypedChoiceField', 'TypedMultipleChoiceField', 'URLField', 'URLInput', 'UUIDField', 'ValidationError', 'Widget', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', 'all_valid', 'boundfield', 'fields', 'fields_for_model', 'forms', 'formset_factory', 'formsets', 'inlineformset_factory', 'model_to_dict', 'modelform_factory', 'modelformset_factory', 'models', 'renderers', 'utils', 'widgets']
+
+In [3]: from django import models
+---------------------------------------------------------------------------
+ImportError                               Traceback (most recent call last)
+<ipython-input-3-1f5a08703cae> in <module>
+----> 1 from django import models
+
+ImportError: cannot import name 'models' from 'django' (C:\Anaconda\lib\site-packages\django\__init__.py)
+
+In [4]: from django.auth import models
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+<ipython-input-4-18ad3c375af7> in <module>
+----> 1 from django.auth import models
+
+ModuleNotFoundError: No module named 'django.auth'
+
+In [5]: from django.db import models
+
+In [6]: print(dir(models))
+['Aggregate', 'AutoField', 'Avg', 'BLANK_CHOICE_DASH', 'BigAutoField', 'BigIntegerField', 'BinaryField', 'BooleanField', 'CASCADE', 'Case', 'CharField', 'CheckConstraint', 'Choices', 'CommaSeparatedIntegerField', 'Count', 'DEFERRED', 'DO_NOTHING', 'DateField', 'DateTimeField', 'DecimalField', 'DurationField', 'EmailField', 'Empty', 'Exists', 'Expression', 'ExpressionList', 'ExpressionWrapper', 'F', 'Field', 'FieldDoesNotExist', 'FileField', 'FilePathField', 'FilteredRelation', 'FloatField', 'ForeignKey', 'ForeignObject', 'Func', 'GenericIPAddressField', 'IPAddressField', 'ImageField', 'Index', 'IntegerChoices', 'IntegerField', 'Lookup', 'Manager', 'ManyToManyField', 'ManyToManyRel', 'ManyToOneRel', 'Max', 'Min', 'Model', 'NOT_PROVIDED', 'NullBooleanField', 'ObjectDoesNotExist', 'OneToOneField', 'OneToOneRel', 'OrderWrt', 'OuterRef', 'PROTECT', 'PositiveIntegerField', 'PositiveSmallIntegerField', 'Prefetch', 'ProtectedError', 'Q', 'QuerySet', 'RowRange', 'SET', 'SET_DEFAULT', 'SET_NULL', 'SlugField', 'SmallAutoField', 'SmallIntegerField', 'StdDev', 'Subquery', 'Sum', 'TextChoices', 'TextField', 'TimeField', 'Transform', 'URLField', 'UUIDField', 'UniqueConstraint', 'Value', 'ValueRange', 'Variance', 'When', 'Window', 'WindowFrame', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', 'aggregates', 'aggregates_all', 'base', 'constants', 'constraints', 'constraints_all', 'deletion', 'enums', 'enums_all', 'expressions', 'fields', 'fields_all', 'functions', 'indexes', 'indexes_all', 'lookups', 'manager', 'options', 'prefetch_related_objects', 'query', 'query_utils', 'signals', 'sql', 'utils']
+
+In [7]: from user.models import UserAdd
+
+In [8]: print(dir(UserAdd))
+['DoesNotExist', 'MultipleObjectsReturned', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_check_column_name_clashes', '_check_constraints', '_check_field_name_clashes', '_check_fields', '_check_id_field', '_check_index_together', '_check_indexes', '_check_local_fields', '_check_long_column_names', '_check_m2m_through_same_relationship', '_check_managers', '_check_model', '_check_model_name_db_lookup_clashes', '_check_ordering', '_check_property_name_related_field_accessor_clashes', '_check_single_primary_key', '_check_swappable', '_check_unique_together', '_do_insert', '_do_update', '_get_FIELD_display', '_get_next_or_previous_by_FIELD', '_get_next_or_previous_in_order', '_get_pk_val', '_get_unique_checks', '_meta', '_perform_date_checks', '_perform_unique_checks', '_save_parents', '_save_table', '_set_pk_val', 'check', 'clean', 'clean_fields', 'date_error_message', 'delete', 'email', 'fname', 'from_db', 'full_clean', 'gender', 'get_deferred_fields', 'id', 'lname', 'objects', 'password', 'pk', 'prepare_database_save', 'refresh_from_db', 'save', 'save_base', 'serializable_value', 'unique_error_message', 'validate_unique']
+
+In [9]: obj = UserAdd()
+
+In [10]: obj.fname = "prasiddh"
+
+In [11]: obj.lname = "saxena"
+
+In [12]: obj.fname
+Out[12]: 'prasiddh'
+
+In [13]: obj.lname
+Out[13]: 'saxena'
+
+In [14]: obj.email = "prasiddh@gmail.com"
+
+In [15]: obj.password = "admin123"
+
+In [16]: obj.gender = "male"
+
+In [17]: obj.save()
+
+In [18]: UserAdd.objects.all()
+Out[18]: <QuerySet [<UserAdd: simrangrover@gmail.com>, <UserAdd: manan@gmail.com>, <UserAdd: prasiddh@gmail.com>]>
+
+In [19]: for i in UserAdd.objects.all():
+    ...:     print(i.fname)
+    ...:
+simran
+manan
+prasiddh
+
+In [20]: for i in UserAdd.objects.all():
+    ...:     print(i.password)
+    ...:
+adminadmin
+password
+admin123
+
+In [21]: for i in UserAdd.objects.all():
+    ...:     print(i.gender)
+    ...:
+    ...:
+female
+male
+male
+
+In [22]: obj1 = UserAdd.objects.all()[0]
+
+In [23]: obj1
+Out[23]: <UserAdd: simrangrover@gmail.com>
+
+In [24]: obj1.__dict__
+Out[24]:
+{'_state': <django.db.models.base.ModelState at 0x1d39676c7c8>,
+ 'id': 1,
+ 'email': 'simrangrover@gmail.com',
+ 'fname': 'simran',
+ 'lname': 'grover',
+ 'password': 'adminadmin',
+ 'gender': 'female'}
+
+In [25]: obj2 = UserAdd.objects.all()[1]
+
+In [26]: obj2.__dict__
+Out[26]:
+{'_state': <django.db.models.base.ModelState at 0x1d396797688>,
+ 'id': 2,
+ 'email': 'manan@gmail.com',
+ 'fname': 'manan',
+ 'lname': 'grover',
+ 'password': 'password',
+ 'gender': 'male'}
+
+In [27]: obj1.fname
+Out[27]: 'simran'
+
+In [28]: obj1.email
+Out[28]: 'simrangrover@gmail.com'
+
+In [29]: obj1.password
+Out[29]: 'adminadmin'
+
+In [30]: obj1.gender
+Out[30]: 'female'
+
+In [31]: UserAdd.objects.get(email="simrangrover@gmail.com")  #select * from user where email="simrangrover"
+Out[31]: <UserAdd: simrangrover@gmail.com>
+
+In [32]: obj = UserAdd.objects.get(email="simrangrover@gmail.com")  #select * from user where email="simrangrover"
+
+In [33]: obj.fname
+Out[33]: 'simran'
+
+In [34]: obj.lname
+Out[34]: 'grover'
+
+In [35]: obj.password
+Out[35]: 'adminadmin'
+
+In [36]: obj = UserAdd.objects.get(email="abc@gmail.com")  #select * from user where email="simrangrover"
+---------------------------------------------------------------------------
+DoesNotExist                              Traceback (most recent call last)
+<ipython-input-36-f9425a9b7603> in <module>
+----> 1 obj = UserAdd.objects.get(email="abc@gmail.com")  #select * from user where email="simrangrover"
+
+C:\Anaconda\lib\site-packages\django\db\models\manager.py in manager_method(self, *args, **kwargs)
+     80         def create_method(name, method):
+     81             def manager_method(self, *args, **kwargs):
+---> 82                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     83             manager_method.__name__ = method.__name__
+     84             manager_method.__doc__ = method.__doc__
+
+C:\Anaconda\lib\site-packages\django\db\models\query.py in get(self, *args, **kwargs)
+    415             raise self.model.DoesNotExist(
+    416                 "%s matching query does not exist." %
+--> 417                 self.model._meta.object_name
+    418             )
+    419         raise self.model.MultipleObjectsReturned(
+
+DoesNotExist: UserAdd matching query does not exist.
+
+In [37]: obj
+Out[37]: <UserAdd: simrangrover@gmail.com>
+
+In [38]: obj.password
+Out[38]: 'adminadmin'
+
+In [39]: obj.password = "manan"
+
+In [40]: obj.password = "password"
+
+In [41]: obj.save()
+
+In [42]: UserAdd.objects.get(password="password")
+---------------------------------------------------------------------------
+MultipleObjectsReturned                   Traceback (most recent call last)
+<ipython-input-42-c223e429db73> in <module>
+----> 1 UserAdd.objects.get(password="password")
+
+C:\Anaconda\lib\site-packages\django\db\models\manager.py in manager_method(self, *args, **kwargs)
+     80         def create_method(name, method):
+     81             def manager_method(self, *args, **kwargs):
+---> 82                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     83             manager_method.__name__ = method.__name__
+     84             manager_method.__doc__ = method.__doc__
+
+C:\Anaconda\lib\site-packages\django\db\models\query.py in get(self, *args, **kwargs)
+    420             'get() returned more than one %s -- it returned %s!' % (
+    421                 self.model._meta.object_name,
+--> 422                 num if not limit or num < limit else 'more than %s' % (limit - 1),
+    423             )
+    424         )
+
+MultipleObjectsReturned: get() returned more than one UserAdd -- it returned 2!
+
+In [43]: UserAdd.objects.filter(password="password")
+Out[43]: <QuerySet [<UserAdd: simrangrover@gmail.com>, <UserAdd: manan@gmail.com>]>
+
+In [44]: objs = UserAdd.objects.filter(password="password")
+
+In [45]: objs[0]
+Out[45]: <UserAdd: simrangrover@gmail.com>
+
+In [46]: objs[1]
+Out[46]: <UserAdd: manan@gmail.com>
+
+In [47]: objs[0].fname
+Out[47]: 'simran'
+
+In [48]: objs[0].lname
+Out[48]: 'grover'
+
+In [49]: objs[0].email
+Out[49]: 'simrangrover@gmail.com'
+
+In [50]: objs[1].email
+Out[50]: 'manan@gmail.com'
+
+In [51]: objs[1].gender
+Out[51]: 'male'
+
+In [52]: UserAdd.objects.filter(gender="male")
+Out[52]: <QuerySet [<UserAdd: manan@gmail.com>, <UserAdd: prasiddh@gmail.com>]>
+
+In [53]: obj = UserAdd.objects.filter(gender="male")
+
+In [54]: obj[0]
+Out[54]: <UserAdd: manan@gmail.com>
+
+In [55]: obj[1]
+Out[55]: <UserAdd: prasiddh@gmail.com>
+
+In [56]: UserAdd.objects.count()
+Out[56]: 3
+
+In [57]: obj = UserAdd()
+
+In [58]: obj.email = "shobhit@gmail.com"
+
+In [59]: obj.password = "admin"
+
+In [60]: obj.gender = "male"
+
+In [61]: obj.save()
+
+In [62]: obj = UserAdd.objects.get(email="shobhit@gmail.com")
+
+In [63]: obj.fname
+Out[63]: ''
+
+In [64]: obj.fname = "Shobhit"
+
+In [65]: obj.lname = "Gupta"
+
+In [66]: obj.save()
+
+In [67]: obj = UserAdd()
+
+In [68]: obj.fname = "faltu:
+    ...:     "
+  File "<ipython-input-68-677c58f1e259>", line 1
+    obj.fname = "faltu:
+                       ^
+SyntaxError: EOL while scanning string literal
+
+
+In [69]: obj.fname = "faltu"
+
+In [70]: obj.lname = "faltu"
+
+In [71]: obj.save()
+
+In [72]: obj = UserAdd.objects.get(fname="faltu")
+
+In [73]: UserAdd.delete(obj)
+Out[73]: (1, {'user.UserAdd': 1})
+
+In [74]: UserAdd.delete(obj) 

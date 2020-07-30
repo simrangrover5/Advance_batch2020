@@ -1,0 +1,27 @@
+Framework --> inbuilt libaries
+http -->???
+s --> ssl --> secure --> encryption (certified)
+Flaskproject --> templates (html pages)
+                static(css,js,bs)
+                app.py(server)
+
+WSGI --> Web server Gateway Interface --> Werkzeug
+Interface --> medium between your web server and web application
+(pip install flask)
+Jinja language --> Python templating engine
+Dynamic Html return 
+.py --> Python
+html --> Python
+
+1. link --> nav.html 
+2. The link which you have defined in your nav.html define that link in your maill file and return a html page on that file
+3. define link in actions of login form and signup form so that the data which you have submitted will be send to the server link
+4. Handle those links in your file and connect to database to exchange data either fetch or insert
+
+
+Session and Cookies
+1. Session is stored on server side and cookies at client side
+2. Fast Access , Tracking Purpose --> Cookies
+3. Session are more secure than cookies
+4. In session set the time period
+Information Store of User

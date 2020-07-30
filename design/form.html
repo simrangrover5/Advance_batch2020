@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            label{
+                font-weight: bold;
+                color:white ;
+                font-size: 30px;
+                font-family: cursive;
+                font-style: italic;
+            }
+            body{
+                background : linear-gradient(coral,#123456);
+            }
+            .main{
+                color: blanchedalmond;
+            }
+            input{
+                height: 4%;
+                width: 15%;
+                
+           
+            .sel{
+                height: 4%;
+                width: 9%;
+                background-color:black;
+                color:white;
+            }
+            .rad{
+                width: 5%;
+            }
+            div{
+                width: 60%;
+                margin-top: 10%;
+                background-color:rgba(0,0,0,0.5);
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <center>
+        <div>
+        <form method="GET" action="two.html">
+            <label>Enter your email</label>
+            <input type="email" name="email" required><br><br>
+            <label>Enter your username</label>
+            <input type="text" name="username"><br><br>
+            <label>Enter your password</label>
+            <input type="password" name="password" placeholder="Password : "><br><br>
+            <label>Gender : </label>
+            <input type="radio" name="gender" value="male" class="rad"><label class="main">MALE</label><input type="radio" name="gender" value="female" class="rad"><label class="main" >FEMALE</label><br><br>
+            <label>Select Your Course : </label>
+            <select name="course" class="sel">
+                <option value="eng">English</option>
+                <option value="maths">Maths</option>
+                <option value="python">Python</option>
+            </select><br><br>
+            <input type="submit" value="LOGIN" class="sel">
+        </form>
+        </div>
+        </center>
+    </body>
+</html>
+<!--# : same page
+table tag , css
+border: 2px solid red;-->

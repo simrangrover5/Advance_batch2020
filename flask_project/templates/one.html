@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color: coral;
+                font-style: italic;
+            }
+            p{
+                color: cornflowerblue;
+                font-size: 30px;
+            }
+            body{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to my web development part</h1>
+        <p>I am excited to work on flask project</p>
+        {% if n %}
+        <h1>Welcome to my project {{n}}</h1>
+        {% endif %}
+        {% if d %}
+        {% for key,value in d.items() %}
+        <h1 style="color: cadetblue;">{{ key }} = {{ value }}</h1>
+        {% endfor %}
+        {% endif %}
+    </body>
+</html>

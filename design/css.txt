@@ -1,0 +1,38 @@
+CSS --> Cascading Style Sheet
+
+Properties --> 200-300
+
+font --> font Properties
+background --> background Properties
+color 
+Types of CSS:
+
+    1. Inline --> style attribute style='property_name:property_value;'
+    2. Internal  --> style tag in head tag 
+    3. External
+
+<head>
+    <style>
+        tag_name1,tag_name2,tag_name3,.....{
+            color : red;
+            fontsize : 30px;
+            font-style : italic;
+        }
+        li,p{
+            font-style : italic;
+        }
+        .main,#id1,label{
+            fontsize : 20px
+        }
+    </style>
+</head>
+<body>
+    <p class="main" id="id1">Hello paragraph</p>
+    <li style='color:blue' class="main">Maths</li>
+    <li style='color:red;font-size:40px;'>English</li>
+    <p>Bye paragraph</p>
+    <label id="id1">This is label</label>
+</body>
+#class and id
+#class --> . --> style tag
+#id --> # --> style tag

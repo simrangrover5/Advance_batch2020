@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <style>
+            body{
+                background : linear-gradient(#123456,coral,#abcdef);
+                background-size: cover;
+            }
+            p{
+                color: black;
+                font-size:40px;
+                font-family: monospace;
+    
+            }
+            form{
+               
+                margin-left: 5%;
+            }
+            #sub{
+                background-color: black;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        {% include "nav.html" %}
+        {% block head %}
+        {% endblock %}
+        <center>
+        <h1 style="color: teal;">{{error}}</h1>
+        <form action="/user/aftersignup/" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="SIGNUP" id="sub">
+        </form>
+        </center>
+    </body>
+</html>

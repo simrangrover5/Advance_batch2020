@@ -1,0 +1,29 @@
+html --> hypertext markup language
+<> --> opening tag , </> --> close tag
+                    DOM 
+            Document Object Model
+                    html
+            head           body
+        1. title            rest all tags
+        2. link              p --> paragraph
+        3. style             li --> list
+        4. script             label --> labelling
+                               ul,ol and so on
+
+<html>
+    <head>
+        <title>My first page</title>
+    </head>
+    <body>
+        <h1> .....</h1>
+    </body>
+</html>
+<br> --> new line
+<p> --> default br tag
+attributes --> properties of that tag
+w3 schools --> html
+<input name="email">
+name --> key 
+email = simrangrover@gmail.com
+password = adminadmin
+username = simrangrover

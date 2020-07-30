@@ -1,0 +1,8 @@
+body{
+    background-image: url("one.jpg");
+    background-size: cover;
+}
+td{
+    color: white;
+    font-size:40px;
+}

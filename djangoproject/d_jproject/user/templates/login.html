@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body{
+                background : linear-gradient(#123456,coral,#abcdef);
+                background-size: cover;
+            }
+            p{
+                color: black;
+                font-size:40px;
+                font-family: fantasy;
+            }
+            form{
+                margin-top: 20%;
+                margin-left: 5%;
+            }
+            #sub{
+                background-color: black;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        {% include "nav.html" %}
+        {% block head %}
+        {% endblock %}
+        <center>
+        <h1 style="color: teal;">{{error}}</h1>
+        <form action="/user/afterlogin/" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="LOGIN" id="sub">
+            <a href="/user/forgot/">FORGOTPASSWORD??</a>
+        </form>
+        </center>
+    </body>
+</html>

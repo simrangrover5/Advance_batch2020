@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .inner{
+                padding-left: 60%;
+                margin-top: -4.5%;
+            }
+            h1{
+                color: white;
+                font-weight: bold;
+                font-family: monospace;
+                padding-left: 15%;
+                padding-top: 2%;
+                font-size: 50px;
+            }
+            td{
+                padding-left: 5px;
+            }
+            label{
+                color: white;
+                font-size: 13px;
+            }
+            a{
+                color: #8b9dc3;
+                font-size: 15px;
+                text-decoration: none;
+            }
+            #log{
+                padding: 3.5px;
+                color: white;
+                background-color:#3b5998;
+                font-size: 10px;
+                border: none;
+                border: 1px solid #8b9dc3;
+            }
+            .one{
+                height: 30px;
+                border: none;
+                border-radius: 2px;
+            }
+            .two{
+                height: 30px;
+                width: 325px;
+                border: none;
+                border-radius: 2px;
+            }
+            .myform td{
+                padding-bottom: 15px;
+            }
+            ::placeholder{
+                padding-left: 7px;
+            }
+            .secdiv{
+                padding-left: 900px;
+            }
+            h2,p{
+                padding-left: 900px;
+            }
+            h2{
+                font-size: 30px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: #3b5998;height: 13%;">
+            <div>
+            <h1>Facebook</h1>
+            </div>
+            <div class="inner">
+                <form>
+                    <table>
+                        <tr>
+                            <td><label>Email or Phone</label></td>
+                            <td><label>Password</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="password"></td>
+                            <td><input type="submit" value="Log In" id="log"></td>
+                
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding-left: 52%;"><a href="#">Forgotten password?</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div style="background-color: #dfe3ee;">
+            <h2>Create an account</h2><br>
+            <p>It's quick and easy.</p>
+            <div class="secdiv">
+                <form class="myform">
+                    <table >
+                    <tr>
+                        <td><input type="text" placeholder="First name" class="one"></td>
+                        <td><input type="text" placeholder="Surname" class="one"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" placeholder="Mobile or Phone Number" class="two"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" placeholder="Password" class="two"></td>
+                    </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

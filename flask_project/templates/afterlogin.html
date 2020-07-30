@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <style>
+            li{
+                display: inline-block;
+                padding: 30px;
+            }
+            a{
+                text-decoration: none;
+                font-size: 25px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style: italic;
+                color: white;
+            }
+            body{
+                background-image: url("/static/one.jpg/");
+                background-size: cover;
+            }
+            a:hover{
+                color: cadetblue;
+            }
+            li:hover{
+                transform: scale(1.2);
+            }
+            .div1{
+                margin-top: 15%;
+                margin-left: 35%;
+                border: 1px solid white;
+                width: 400px;
+            }
+            h1{
+                font-weight: bold;
+                font-family: monospace;
+                font-size: 60px;
+                padding-left: 25px;
+                color: coral;
+            }
+            #id1{
+                margin-top: -5%;
+                margin-left: 70%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+            <ul>
+                <li><a href="/weather/">CHECKWEATHER</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="/logout/">LOGOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            </div>
+            <div id="id1">
+                <h3 style="color: cornflowerblue;">{{user}}</h3>
+            </div>
+        </div>
+        <div class="div1">
+            <h1>MY WEBSITE</h1>
+        </div>
+    </body>
+</html>
+<!--float: right;
+background-color: black;-->

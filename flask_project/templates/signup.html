@@ -1,0 +1,37 @@
+<html>
+    <head>
+       <style>
+           body{
+               background-image: url("/static/one.jpg");
+           }
+           label{
+               color: white;
+               font-size: 30px;
+               font-style: italic;
+           }
+           form{
+               margin-top: 20%;
+           }
+           a{
+               text-decoration: none;
+               color: royalblue;
+           }
+       </style>
+    </head>
+    <body>
+        <center>
+        <form action="/aftersignup/" method="POST">
+            <h1 style="color: red;">{{error}}</h1>
+            <label>Enter your email</label>
+            <input type="email" name="email"><br><br>
+            <label>Enter your password</label>
+            <input type="password" name="passwd"><br>
+            <small>Password should be 8 character long and fullfill basic password conditions</small><br><br>
+            <label>Choose your gender</label>
+            <input type="radio" name="gender" value="male"><label>Male</label><input type="radio" value="female" name="gender"><label>Female</label><br><br>
+            <input type="submit" value="SIGNUP">
+            <a href="/login/">Already Registered?</a>
+        </form>
+    </center>
+    </body>
+</html>

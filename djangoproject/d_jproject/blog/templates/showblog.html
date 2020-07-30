@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <style>
+            body{
+                background: linear-gradient(gray,coral);
+            }
+        </style>
+    </head>
+    <body>
+        {% for obj in blogs %}
+        <h1>{{ obj.title }}</h1>
+        <p>{{ obj.post }}</p>
+        <h3>{{ obj.date }}</h3>
+        <h3>{{ obj.author }}</h3>
+        <hr>
+        {% endfor %}
+    </body>
+</html>
+

@@ -1,0 +1,32 @@
+pip install django  #install django pkg
+
+django-admin startproject djproject
+
+djangoproject --> djproject --> djproject
+                                    urls.py
+                                    settings.py
+                                    views.py
+                                    wsgi.py
+                                    asgi.py
+                                    __init__.py
+                                manage.py
+manage.py --> it has to manage the project
+urls.py --> url(path)
+@app.route("/") #route(path) --> urls.py
+def index() #function in views.py
+views.py --> function
+wsgi --> web server gateway interface(flask --> werkzeug)
+asynchronous gateway interface --> interface between web server and web application
+speed of asgi per user is faster than wsgi
+__init__.py --> 
+pkg --> folder consisting of mulitply modules
+modules --> .py file
+settings --> whole setting of your project is written in this file 
+
+
+run the server using the command:
+    python manage.py runserver host_name:port_no
+    (run this command where your manage.py file is)
+
+1. urls.py --> write path over there
+2. views.py --> function (which will run on that particular path)

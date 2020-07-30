@@ -1,0 +1,23 @@
+models ---> user
+database --> mysql --> localhost,3306
+
+1. python manage.py makemigrations
+ (it will read the models.py file and make another file in which 
+ it will define your configurations and use this file in further migrations)
+
+2. python manage.py sqlmigrate user 0001(the name of the file created during 1 migration)
+    It will read the file and will make a command of table which will be further read
+    by the 3rd migration
+
+3. python manage.py migrate
+    it will migrate or it will make my all tables or updation into the database.
+
+3 ways to insert your data
+    a. direct through database
+    b. through admin panel --> (username and password) --> path(localhost/admin)
+        python manage.py createsuperuser
+            username --> simrangrover
+            email --> 
+            password --> 
+    c. django shell
+        python manage.py shell

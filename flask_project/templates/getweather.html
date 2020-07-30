@@ -1,0 +1,47 @@
+<html>
+    <head>
+       <style>
+           body{
+               background-image: url("/static/one.jpg");
+           }
+           label{
+               color: white;
+               font-size: 30px;
+               font-style: italic;
+           }
+           a{
+               text-decoration: none;
+               color: royalblue;
+           }
+           #key{
+               color:#abcdef;
+               font-size: 15px;
+               font-family: cursive;
+           }
+           #value{
+               color: #abc123;
+               font-size: 20px;
+               font-family: cursive;
+               font-style: italic;
+               font-weight: bold;
+           }
+       </style>
+    </head>
+    <body>
+        <center>
+        <form action="/weather/" method="POST">
+            <h1 style="color: red;">{{error}}</h1>
+            <label>Enter city name</label>
+            <input type="text" name="city"><br><br>
+            <input type="submit" value="SUBMIT">
+        </form>
+        
+        {% if data %}
+        {% for key,value in data.items() %}
+        <label id="key">{{ key }}</label> : <label id="value">{{ value }}</label><br>
+        {% endfor %}
+        <img src=http://openweathermap.org/img/w/{{icon}}.png height=100px width=100px>
+        {% endif %}
+    </center>
+    </body>
+</html>
