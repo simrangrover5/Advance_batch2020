@@ -1,0 +1,26 @@
+<html>
+    <style>
+        body{
+                background:linear-gradient(gray,black)
+            }
+        a{
+            color: cornflowerblue;
+            font-size: 40px;
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            color: #abcdef;
+        }
+    </style>
+    <body>
+        {% if news %}
+            {% for n in news %}
+            <h1> {{ n.content }} </h1>
+            <a href={{n.url}}>URL FOR FURTHER READING</a>
+            <hr>
+            {% endfor %}
+        {% endif %}
+
+    </body>
+</html>
